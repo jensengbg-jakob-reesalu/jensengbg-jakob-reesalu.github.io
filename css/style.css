@@ -4,7 +4,8 @@
 
 body {
     background-color: rgb(36, 36, 36);
-    margin: 30px;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
 header {
@@ -114,12 +115,8 @@ p {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
-
-
 footer {
     color: gray;
     text-align: center;
     font-size: small;
 }
-
