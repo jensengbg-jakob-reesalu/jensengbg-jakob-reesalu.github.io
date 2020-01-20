@@ -3,14 +3,14 @@ body {
 }
 
 header {
-    color: coral;
+    color: rgb(190, 255, 233);
     background-image: url("../img/legobild1.JPG"); 
     background-size: cover;
     background-repeat: no-repeat;
-    background-position-y: 50%;
+    background-position: center;
     height: 500px;
-    margin: 20px;
-    border-radius: 15px;
+    margin: 0px 20px 0px 20px;
+    border-radius: 15px 15px 0px 0px;
 }
 
 nav {
@@ -20,7 +20,7 @@ nav {
 }
 
 h1 {
-    font-family: cursive;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
     font-size: 50px;
 }
@@ -63,17 +63,32 @@ li:last-child {
 article {
     background-color:rgb(16, 170, 144);
     color: rgb(190, 255, 233);
-    margin: 20px;
+    margin: 0px 20px 0px 20px;
     padding: 20px;
-    border-radius: 15px;
+    border-radius: 0px 0px 15px 15px;
+    width: 100%;
 }
 
 p {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+
 h2 {
     font-family: cursive;
+}
+
+.my-picture {
+    border: 5px solid rgb(190, 255, 233); 
+    border-radius: 1000px; 
+    width: 100%;
+    max-width: 350px;
+    float: left;
+    margin: 20px;
+}
+
+article p {
+    
 }
 
 footer {
