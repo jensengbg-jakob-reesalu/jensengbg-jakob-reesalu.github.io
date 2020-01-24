@@ -4,25 +4,30 @@
 
 body {
     background-color: rgb(36, 36, 36);
-    margin-left: 2%;
-    margin-right: 2%;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 2vw;
 }
 
 header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70%;
     color: rgb(190, 255, 233);
+    border-radius: 15px 15px 0px 0px;
+    box-shadow: inset 0px 0px 20px 8px rgb(16, 170, 144);
     background-image: url("../img/legobild1.JPG"); 
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 500px;
-    border-radius: 15px 15px 0px 0px;
-    box-shadow: inset 0px 0px 20px 8px rgb(16, 170, 144);
 }
 
 #welcome {
     text-align: center;
     text-shadow: 2px 2px 0px black;
-    padding-top: 2rem;
+    padding-top: 3rem;
 }
 
 #welcome h1 {
@@ -35,41 +40,12 @@ header {
     margin: 0;
 }
 
-
-
-nav {
-    position: relative;
-    top: 70%;
-}
-
-nav::before {
-    box-shadow: inset 15px 0px 15px -10px rgb(16, 170, 144);
-    content: " ";
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 20px;
-}
-
-nav::after {
-    box-shadow: inset -15px 0px 15px -10px rgb(16, 170, 144);
-    content: " ";
-    height: 100%;
-    right: 0px;
-    position: absolute;
-    top: 0;
-    width: 20px;
-}
-
-
-
 ul {
     display: flex;
     justify-content: space-evenly;
     list-style-type: none;
     padding: 0px;
-    overflow: hidden;
+    margin: 0;
     background-color: #333; 
 }
  
@@ -80,10 +56,18 @@ li {
 
 li a {
     display: block;
+    padding: 1rem;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
-    padding: 1rem 5.6rem;
+}
+
+ul li:first-child {
+    box-shadow: inset 15px 0px 15px -10px rgb(16, 170, 144);
+}
+
+ul li:last-child {
+    box-shadow: inset -15px 0px 15px -10px rgb(16, 170, 144);
 }
 
 li a:hover:not(.active) {
@@ -91,10 +75,11 @@ li a:hover:not(.active) {
 }
 
 .active {
-    background-color:rgb(16, 170, 144);     
+    background-color:rgb(171, 201, 196);     
 }
 
 article {
+    display: flex;
     background-color:rgb(16, 170, 144);
     color: rgb(190, 255, 233);
     padding: 20px;
@@ -109,17 +94,24 @@ h2 {
     border: 5px solid rgb(190, 255, 233); 
     border-radius: 1000px; 
     width: 100%;
+    height: 100%;
     max-width: 350px;
     margin: 20px;
 }
 
 figure {
-    display: inline-block;
-    
+    margin: 0;
+    padding: 0;   
 }
 
-section {
-    display: inline-block;
+.about-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-section h2 {
+    margin: 0;
 }
 
 p {
@@ -130,4 +122,22 @@ footer {
     color: gray;
     text-align: center;
     font-size: small;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {    
+    header {
+        height: 20rem;
+    }
+
+    article { 
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-article img {
+        margin: 0;
+    }
+    
 }
