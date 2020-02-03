@@ -125,19 +125,3 @@ footer {
 }
 
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {    
-    header {
-        height: 20rem;
-    }
-
-    article { 
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .about-article img {
-        margin: 0;
-    }
-    
-}

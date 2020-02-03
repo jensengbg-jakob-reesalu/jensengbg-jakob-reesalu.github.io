@@ -1,0 +1,12 @@
+header {
+    height: 20rem;
+}
+
+article { 
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-article img {
+    margin: 0;
+}
